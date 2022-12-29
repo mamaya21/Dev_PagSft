@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="es">
+
+<head>
+    <title>Torneo WolfTeam</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CRoboto:400%7CRubik:100,400,700">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+    </style>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="row" id="dv__main">
+            <div class="col-md-6 dv__pd__main">
+                <div class="title">
+                    <div id="img_tournament" class="img_tournament">
+                        <img src="images/background/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6 dv__pd__main">
+                <div class="dv_op_news__sec2">
+
+                    <button class="c__dsw__01__a__s1">FEATURED PARTNERSHIP</button>
+                    <br><br>
+                    <h3 class="h3__tittle">Kingdom Story: Heroes War</h1>
+                        <br>
+                    <p class="p__body">Description text here. This highly limited supply membership pass is a gateway to earn guaranteed access to 10% discount.</p>
+                    <br>
+                    <!-- icons -->
+                    <ul class="social-links">
+                        <li><a class="fa-solid fa-globe button-way-point" href="#"></a></li>
+                        <li><a class="fa-brands fa-discord button-way-point" href="#"></a></li>
+                        <li><a class="fa fa-twitter button-way-point" href="#"></a></li>
+                        <li><a class="fas fa-book-open button-way-point" href="#"></a></li>
+                      </ul>
+
+                      <br>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="p__body">Price</p>
+                            <i class="fa fa-bars fa-2x i__txt" aria-hidden="true"> 0.18</i>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="p__body">Discount</p>
+                            <i class="fa fa-2x i__txt">10 %</i>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="p__body">Public Price</p>
+                            <i class="fa fa-bars fa-2x i__txt" aria-hidden="true"> 0.2</i>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="p__body">Quantity</p>
+                            <i class="fa fa-2x i__txt">500</i>
+                        </div>
+                    </div>
+                    <br>
+
+                    <button id="btn_mint" class="c__dsw__01__a__s2" onclick="move()">CONNECT WALLET</button>
+                    <!-- CONNECT WALLET -->
+                    <br><br>
+
+                    <div class="row r__0">
+                        <div class="col-md-6"><p class="p__body">Total minted</p></div>
+                        <div class="col-md-6"><p class="p__body2">40% (200/500)</p></div>
+                        
+                        <div class="col-md-12" id="myProgress">
+                            <div id="myBar"></div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div id="sec_nav">
+                    
+                    
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Mystery Box</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">About Kingdom Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#references" role="tab" data-toggle="tab">Roadmap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team" role="tab" data-toggle="tab">Team</a>
+                            </li>
+                        </ul>
+                    
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active show" id="profile">
+                                <br>
+                                <p class="p__body">미스터리 박스 구매 시 랜덤으로 획득하는 멤버쉽 티켓을 구매할 수 있습니다. 
+                                    멤버쉽 티켓은 골드, 실버, 브론즈 등급으로 구분되며, 계정당 최대 5개를 활성화 하고 게임 내에서 다양한 혜택을 받을 수 있습니다. 이 멤버쉽은 보유하고 있는 동안 게임 내에서 지속적으로 혜택을 누릴 수 있으며, 한정적으로 발행되기 때문에 그 가치는 앞으로 계속 높아질 것 입니다.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="buzz">
+                                <br>
+                                <p class="p__body">미스터리 박스 구매 시 랜덤으로 획득하는 멤버쉽 티켓을 구매할 수 있습니다. 
+                                    멤버쉽 티켓은 골드, 실버, 브론즈 등급으로 구분되며, 계정당 최대 5개를 활성화 하고 게임 내에서 다양한 혜택을 받을 수 있습니다. 이 멤버쉽은 보유하고 있는 동안 게임 내에서 지속적으로 혜택을 누릴 수 있으며, 한정적으로 발행되기 때문에 그 가치는 앞으로 계속 높아질 것 입니다.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="references">
+                                <br>
+                                <p class="p__body">미스터리 박스 구매 시 랜덤으로 획득하는 멤버쉽 티켓을 구매할 수 있습니다. 
+                                    멤버쉽 티켓은 골드, 실버, 브론즈 등급으로 구분되며, 계정당 최대 5개를 활성화 하고 게임 내에서 다양한 혜택을 받을 수 있습니다. 이 멤버쉽은 보유하고 있는 동안 게임 내에서 지속적으로 혜택을 누릴 수 있으며, 한정적으로 발행되기 때문에 그 가치는 앞으로 계속 높아질 것 입니다.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="team">
+                                <br>
+                                <p class="p__body">미스터리 박스 구매 시 랜덤으로 획득하는 멤버쉽 티켓을 구매할 수 있습니다. 
+                                    멤버쉽 티켓은 골드, 실버, 브론즈 등급으로 구분되며, 계정당 최대 5개를 활성화 하고 게임 내에서 다양한 혜택을 받을 수 있습니다. 이 멤버쉽은 보유하고 있는 동안 게임 내에서 지속적으로 혜택을 누릴 수 있으며, 한정적으로 발행되기 때문에 그 가치는 앞으로 계속 높아질 것 입니다.</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- <div class="col-md-12"> -->
+       
+    <!-- </div> -->
+
+
+    <div>
+        <img id="video-background" src="images/background/back1.jpg" alt="">
+    </div>
+
+    <script>
+
+        var i = 0;
+        var continue_ = false;
+        var width = 1;
+
+        function move() {
+            // if (i == 0) {
+            //     i = 1;
+                var btn_mnt = document.getElementById("btn_mint");
+                btn_mnt.innerHTML = '';
+                btn_mnt.innerHTML = '<img class="img__btn_mint" src="images/loading-gif.gif" alt="">';
+
+
+                var elem = document.getElementById("myBar");
+                
+                var id = setInterval(frame, 20);
+
+                async function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        i = 0;
+                        btn_mnt.innerHTML = '';
+                        btn_mnt.innerHTML = 'MINT SOLD OUT';
+                        Swal.fire({
+                            title: "{0}화이트 리스트로등록된 계정이 아닙니다.",
+                            confirmButtonText: "확인",
+                            allowOutsideClick: false
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                width = 2;
+                                btn_mnt.innerHTML = '';
+                                btn_mnt.innerHTML = 'CONNECT WALLET';
+                                elem.style.width = width + "%";
+                                continue_ = true;
+                            }
+                        });
+                    } else {
+
+                        if(width<=20){
+                            btn_mnt.innerHTML = '';
+                            btn_mnt.innerHTML = 'MINT <img class="img__btn_mint" src="images/loading-gif.gif" alt="">';
+                        }
+
+                        if(width<=20 || (width>=21 && width<=40 && continue_) || (width>=41 && width<=100 && continue_)){
+                            width++;
+                            elem.style.width = width + "%";
+                        }
+
+                        if(width == 20){
+                            continue_ = false;                            
+                            
+                            await Swal.fire({
+                                title: "{0}화이트 리스트로등록된 계정이 아닙니다.",
+                                confirmButtonText: "확인",
+                                allowOutsideClick: false
+                            }).then((result) => {
+                                btn_mnt.innerHTML = '';
+                                btn_mnt.innerHTML = 'MINT STANDBY <img class="img__btn_mint" src="images/loading-gif.gif" alt="">';
+                                if (result.isConfirmed) {
+                                    width++;
+                                    elem.style.width = width + "%";
+                                    continue_ = true;
+                                } 
+                            });
+                        }
+
+                        if(width == 40 && continue_){
+                            continue_ = false;                            
+                            await Swal.fire({
+                                title: "{0}화이트 리스트로등록된 계정이 아닙니다.",
+                                confirmButtonText: "확인",
+                                allowOutsideClick: false
+                            }).then((result) => {
+                                btn_mnt.innerHTML = '';
+                                btn_mnt.innerHTML = 'MINT LOADING <img class="img__btn_mint" src="images/loading-gif.gif" alt="">';
+                                if (result.isConfirmed) {
+                                    width++;
+                                    elem.style.width = width + "%";
+                                    continue_ = true;
+                                } 
+                            });
+                        }
+
+
+                    }
+                }
+            // }
+        }
+    </script>    
+
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script_vjs2.js"></script>
+</body>
+
+</html>
